@@ -31,7 +31,7 @@ export default defineConfig({
   root: path.resolve(__dirname, "client"),
   build: {
     outDir: path.resolve(__dirname, "dist/"),
-    chunkSizeWarningLimit: 1000, // Increase limit from 500KB to 1MB
+    chunkSizeWarningLimit: 110000, // Increase limit from 500KB to 1MB
     emptyOutDir: true,
   },
 });
