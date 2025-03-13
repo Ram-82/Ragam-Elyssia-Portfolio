@@ -23,14 +23,8 @@ export function ProtectedRoute({
   }
 
   if (!user) {
-    return (
-      <Route path={path}>
-        {navigate("/auth")}
-        <div className="flex items-center justify-center min-h-screen">
-          <Loader2 className="h-8 w-8 animate-spin text-gold" />
-        </div>
-      </Route>
-    );
+    navigate("/auth");
+    return null;
   }
 
   return <Route path={path} component={Component} />;
