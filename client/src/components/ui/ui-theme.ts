@@ -1,4 +1,4 @@
-import { createTheme } from "@/lib/utils";
+import { createTheme } from "@shadcn/ui/theme"; // Fix this import path to match your actual theme utility location
 
 export const luxuryTheme = createTheme({
   cssVariables: {
